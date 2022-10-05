@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test autofill</title>
+</head>
+<body>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $( "#textbox" ).autocomplete({
+            source: "autocomplete.php",
+            minLength: 2
+        });
+    });
+</script>
+<input id="textbox" class="full-width" />
+</body>
+</html>

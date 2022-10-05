@@ -1,0 +1,25 @@
+<html>
+<head>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery-ui.js"></script>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script type="text/javascript">
+    $(function()
+    {
+      $( "#coding_language" ).autocomplete({
+        source: 'autocomplete.php'
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="wrapper">
+
+  <div class="ui-widget">
+    <p>Enter Coding Language</p>
+    <input type="text" id="coding_language">
+  </div>
+
+</div>
+</body>
+</html>
